@@ -3,19 +3,16 @@
 #include "Scene.h"
 #include "Snake.h"
 
-class SceneMain : public Scene
-{
+class SceneMain : public Scene {
 public:
-    SceneMain();
-    void Update() override;
-    void Rende() override;
+  SceneMain();
+  void Update() override;
+  void Rende() override;
 
 private:
-    int frame;
+  int frame;
 
-    Snake snake;
-    Mat2D map;
-    Vector2 food;
-
-    
-};                      
+  Snake snake;
+  Mat2D map;
+  Vector2 food;
+};

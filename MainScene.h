@@ -4,23 +4,22 @@
 #include "Scene.h"
 #include "Snake.h"
 
-class MainScene : public Scene
-{
+class MainScene : public Scene {
 public:
-    MainScene(int mapRows, int mapCols);
-    void Init();
-    void Update() override;
-    void Rende() override;
+  MainScene(int mapRows, int mapCols);
+  void Init();
+  void Update() override;
+  void Rende() override;
 
 private:
-    bool IsDie();
-    void GenFood();
+  bool IsDie();
+  void GenFood();
 
-    Vector2 food;
-    Mat2D map;
-    Snake snake;
+  Vector2 food;
+  Mat2D map;
+  Snake snake;
 
-    int lastSnakeMoveFrame;
+  int lastSnakeMoveFrame;
 
-    int blockSize;
-};    
+  int blockSize;
+};

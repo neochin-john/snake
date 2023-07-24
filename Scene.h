@@ -1,12 +1,11 @@
 #pragma once
 
-class Scene
-{
+class Scene {
 public:
-    virtual void Update() = 0;
-    virtual void Rende() = 0;
-    void SetFrame(int frame) { this->frame = frame; }
+  virtual void Update() = 0;
+  virtual void Rende() = 0;
+  void SetFrame(int frame) { this->frame = frame; }
 
 protected:
-    int frame;
-};    
+  int frame;
+};

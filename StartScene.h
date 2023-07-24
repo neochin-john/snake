@@ -2,9 +2,8 @@
 
 #include "Scene.h"
 
-class StartScene : public Scene
-{
+class StartScene : public Scene {
 public:
-    void Update() override;
-    void Rende() override;
+  void Update() override;
+  void Rende() override;
 };
