@@ -1,2 +1,2 @@
 all:
-	g++ -lraylib `ls *.cpp` -o snake
+	g++ *.cpp -lraylib -o snake
